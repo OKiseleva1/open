@@ -1,3 +1,9 @@
+body {
+    background-color: rgb(31, 48, 40);
+    font-size: 25px;
+    color: #fff;
+}
+
 .fullscreen-bg {
     overflow: hidden;
     z-index: -100;
@@ -27,34 +33,47 @@
 .overlay h1 {
     text-align: center;
     color: #fff;
-    font-size: 70px;
+    font-size: 50px;
     margin-top: 17%;
 }
 
-.sprite-container {
+.content-footer {
     height: 15vh;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding-right: 70px;
 }
 
-.sprite-image {
-    height: 123px;
+.content-footer_logo {
+    display: block;
+    width: 103px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(img/96af869c81b72f76c010f7ef0f2c5c37.jpg);
+}
+
+.content-footer_list {
+    list-style: none;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+}
+
+
+
+.icon {
+    display: block;
     width: 70px;
-    background: url(img/smur-sprite.png) 0px 0px;
-    animation: play 0.8s steps(16) infinite,
-        step 10s linear infinite;
-    position: absolute;
-    left: 0;
+
 }
 
-@keyframes play {
-    100% {
-        background-position: -1135px;
-    }
+.content-footer_item {
+    margin-left: 67px;
 }
 
-@keyframes step {
-    100% {
-        left: 100%;
-    }
+.content-footer_item:first-child {
+    margin-left: 0;
 }
