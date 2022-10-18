@@ -1,7 +1,8 @@
 body {
     background-color: rgb(31, 48, 40);
-    font-size: 25px;
+    font-size: 1.5rem;
     color: rgb(221, 90, 38);
+    font-family: 'Roboto', sans-serif;
 }
 
 .fullscreen-bg {
@@ -31,7 +32,7 @@ body {
 }
 
 .overlay img {
-    width: 800px;
+    width: 45vw;
     padding-left: 25%;
     padding-top: 15%;
 }
@@ -39,7 +40,7 @@ body {
 .overlay h1 {
     text-align: center;
     color: rgb(221, 90, 38);
-    font-size: 30px;
+    font-size: 3vh;
 
 }
 
@@ -48,13 +49,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 70px;
+    padding-right: 4vw;
+    padding-left: 4vw;
 }
 
 .content-footer_logo {
     display: block;
-    width: 350px;
-    padding-left: 30px;
+    width: 20vw;
     font-weight: bold;
 
 
@@ -77,9 +78,19 @@ body {
 }
 
 .content-footer_item {
-    margin-left: 67px;
+    margin-left: 5vw;
 }
 
 .content-footer_item:first-child {
     margin-left: 0;
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('../images/plane.jpg') center center / cover no-repeat;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
+    }
 }
