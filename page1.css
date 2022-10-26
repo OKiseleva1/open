@@ -1,17 +1,23 @@
-body {
-    background-color: rgb(31, 48, 40);
-    font-size: 1.5rem;
-    color: rgb(221, 90, 38);
-    font-family: 'Roboto', sans-serif;
+.logo {
+    width: 45%;
 }
 
-.fullscreen-bg {
-    overflow: hidden;
-    z-index: -100;
+.full-screen {
     position: relative;
-    height: 100%;
-    width: 100%;
-    padding-top: 45%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 15px;
+}
+
+.full-screen_body {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .fullscreen-bg__video {
@@ -19,80 +25,11 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-}
-
-.overlay {
-    background: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
     height: 100%;
-    z-index: 4;
+    object-fit: cover;
 }
 
-.overlay img {
-    width: 45vw;
-    padding-left: 25%;
-    padding-top: 15%;
-}
+footer {
+    background-color: aquamarine;
 
-.overlay h1 {
-    text-align: center;
-    color: rgb(221, 90, 38);
-    font-size: 3vh;
-
-}
-
-.content-footer {
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.content-footer-name {
-    display: flex;
-    width: 20vw;
-    height: 30px;
-    margin-left: 45%;
-    text-align: center;
-    font-size: 1rem;
-
-}
-
-.content-footer_list {
-    justify-content: space-between;
-    list-style: none;
-    align-items: center;
-    padding-left: 0;
-    display: flex;
-}
-
-.icon {
-    display: block;
-    width: 70px;
-}
-
-.content-footer_item {
-    margin-left: 5vw;
-}
-
-.content-footer_item:nth-child(2) {
-    margin-right: 20vw;
-}
-
-@media (max-width: 767px) {
-    .fullscreen-bg {
-        background: url('../images/plane.jpg') center center / cover no-repeat;
-    }
-
-    .fullscreen-bg__video {
-        display: none;
-    }
-}
-
-hr {
-    border-color: rgb(30, 108, 82);
 }
